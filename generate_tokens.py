@@ -299,33 +299,12 @@ def main():
     project_dir = os.path.dirname(os.path.abspath(__file__))
     generator = TokenGenerator(project_dir)
     
-    # Image to god name mapping (need to verify these!)
-    # Based on visible runic text in images
-    image_mapping = {
-        # From batch 1 (based on runic text visible)
-        "bcd64149-69e7-4c99-883a-674b84565c68.webp": "Vár's Bond",
-        "f393a877-3e40-4df6-b1d0-05fd0edfe194.webp": "Iðunn's Rejuvenation", 
-        "0fb6e3c3-9575-4289-8c9b-9791f27ce25c.webp": "Ullr's Aim",
-        "265748a5-7620-49d2-b621-d840d921989a.webp": "Odin's Sacrifice",
-        "e74f0eea-0caa-4077-8a97-ffe47fa1607d.webp": "Víðarr's Might",
-        "00eb8df2-3a9b-4e93-abf6-ee6a8e6d8920.webp": "Brunhild's Fury",
-        "89673c72-5615-45e2-9992-dea4b0609484.webp": "Heimdall's Watch",
-        "f3c4995d-66a5-4a17-9368-e4a3cafde1b3.webp": "Skaði's Hunt",
-        "8d3016a4-670b-45a3-9d52-5133988f8044.webp": "Freyr's Gift",
-        "afbbec3c-e662-49a0-8f54-68aec6443bc9.webp": "Mímir's Wisdom",
-        
-        # From batch 2
-        "3f2758a2-ae7e-4598-be9d-bdbaea62f3a1.webp": "Tyr's Pledge",
-        "6d04703e-a5ae-4bf3-9e4c-d4eb44d54592.webp": "Freyja's Plenty",
-        "c00ba085-e426-4778-a982-e8446ffa21fb.webp": "Hel's Grip",
-        "084d204e-8fbe-420b-b165-d8f7a6a06d55.webp": "Thor's Strike",
-        "9a30a1f7-dd38-4f50-910c-2907f26f3ca1.webp": "Baldr's Invulnerability",
-        "5f68f497-6b6d-4f95-8cc5-9cbac5ba27da.webp": "Thrymr's Theft",
-        "af1a6a8d-29f2-472f-8d05-1dcc221d7876.webp": "Frigg's Sight",
-        "6c323950-a832-485d-aa0b-ec04b10c520f.webp": "Loki's Trick",
-        "f76c28d9-1944-4168-b035-1c84f3743056.webp": "Skuld's Claim",
-    }
+    # Load verified image mapping from JSON
+    mapping_file = os.path.join(project_dir, "image_mapping.json")
+    with open(mapping_file, "r") as f:
+        image_mapping = json.load(f)
     
+    print(f"Loaded {len(image_mapping)} image mappings")
     generator.run(image_mapping)
 
 
