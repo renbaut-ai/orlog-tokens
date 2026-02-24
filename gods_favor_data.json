@@ -1,0 +1,208 @@
+{
+  "dimensions": {
+    "width_in": 1.125,
+    "height_in": 2.34375,
+    "depth_in": 0.125,
+    "width_mm": 28.575,
+    "height_mm": 59.53125,
+    "depth_mm": 3.175
+  },
+  "die_faces": {
+    "helmet": "🪖",
+    "arrow": "→",
+    "shield": "⊙",
+    "axe": "⚔",
+    "hand": "✋"
+  },
+  "token_symbol": "⌘",
+  "gods_favor": [
+    {
+      "id": 1,
+      "name": "Thor's Strike",
+      "tiers": [
+        {"cost": 4, "effect": "Deal 2 damage"},
+        {"cost": 8, "effect": "Deal 5 damage"},
+        {"cost": 12, "effect": "Deal 8 damage"}
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Iðunn's Rejuvenation",
+      "tiers": [
+        {"cost": 4, "effect": "Heal 2 Health"},
+        {"cost": 7, "effect": "Heal 4 Health"},
+        {"cost": 10, "effect": "Heal 6 Health"}
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Víðarr's Might",
+      "die_face": "helmet",
+      "tiers": [
+        {"cost": 2, "effect": "-2 helmet"},
+        {"cost": 4, "effect": "-4 helmet"},
+        {"cost": 6, "effect": "-6 helmet"}
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Ullr's Aim",
+      "die_face": "arrow",
+      "tiers": [
+        {"cost": 2, "effect": "2 arrow ignore shield"},
+        {"cost": 3, "effect": "3 arrow ignore shield"},
+        {"cost": 4, "effect": "6 arrow ignore shield"}
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Heimdall's Watch",
+      "tiers": [
+        {"cost": 4, "effect": "+1 Health per block"},
+        {"cost": 7, "effect": "+2 Health per block"},
+        {"cost": 10, "effect": "+3 Health per block"}
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Baldr's Invulnerability",
+      "die_face": "helmet/shield",
+      "tiers": [
+        {"cost": 3, "effect": "+1 helmet per helmet/shield die"},
+        {"cost": 6, "effect": "+2 helmet per helmet/shield die"},
+        {"cost": 9, "effect": "+3 helmet per helmet/shield die"}
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Brunhild's Fury",
+      "die_face": "axe",
+      "tiers": [
+        {"cost": 6, "effect": "x1.5 axe"},
+        {"cost": 10, "effect": "x2 axe"},
+        {"cost": 18, "effect": "x3 axe"}
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Freyr's Gift",
+      "tiers": [
+        {"cost": 4, "effect": "+2"},
+        {"cost": 6, "effect": "+3"},
+        {"cost": 8, "effect": "+4"}
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Hel's Grip",
+      "die_face": "axe",
+      "tiers": [
+        {"cost": 6, "effect": "+1 Health per axe damage"},
+        {"cost": 12, "effect": "+2 Health per axe damage"},
+        {"cost": 18, "effect": "+3 Health per axe damage"}
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Skaði's Hunt",
+      "die_face": "arrow",
+      "tiers": [
+        {"cost": 6, "effect": "+1 arrow per arrow die"},
+        {"cost": 10, "effect": "+2 arrow per arrow die"},
+        {"cost": 14, "effect": "+3 arrow per arrow die"}
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Skuld's Claim",
+      "die_face": "arrow",
+      "tiers": [
+        {"cost": 4, "effect": "-2⌘ per arrow die"},
+        {"cost": 6, "effect": "-3⌘ per arrow die"},
+        {"cost": 8, "effect": "-4⌘ per arrow die"}
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Frigg's Sight",
+      "tiers": [
+        {"cost": 2, "effect": "Reroll 2 dice"},
+        {"cost": 3, "effect": "Reroll 3 dice"},
+        {"cost": 4, "effect": "Reroll 4 dice"}
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Loki's Trick",
+      "tiers": [
+        {"cost": 3, "effect": "Ban 1 die"},
+        {"cost": 6, "effect": "Ban 2 dice"},
+        {"cost": 9, "effect": "Ban 3 dice"}
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Freyja's Plenty",
+      "tiers": [
+        {"cost": 2, "effect": "+1 die"},
+        {"cost": 4, "effect": "+2 dice"},
+        {"cost": 6, "effect": "+3 dice"}
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Mímir's Wisdom",
+      "tiers": [
+        {"cost": 3, "effect": "+1⌘ per damage"},
+        {"cost": 5, "effect": "+2⌘ per damage"},
+        {"cost": 7, "effect": "+3⌘ per damage"}
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Bragi's Verve",
+      "die_face": "hand",
+      "tiers": [
+        {"cost": 4, "effect": "Gain 2⌘ per hand die"},
+        {"cost": 8, "effect": "Gain 3⌘ per hand die"},
+        {"cost": 12, "effect": "Gain 4⌘ per hand die"}
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Odin's Sacrifice",
+      "tiers": [
+        {"cost": 6, "effect": "Gain 3⌘ per health"},
+        {"cost": 8, "effect": "Gain 4⌘ per health"},
+        {"cost": 10, "effect": "Gain 5⌘ per health"}
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Vár's Bond",
+      "tiers": [
+        {"cost": 10, "effect": "+1 Health per ⌘"},
+        {"cost": 14, "effect": "+2 Health per ⌘"},
+        {"cost": 18, "effect": "+3 Health per ⌘"}
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Thrymr's Theft",
+      "tiers": [
+        {"cost": 3, "effect": "-1 level"},
+        {"cost": 6, "effect": "-2 levels"},
+        {"cost": 9, "effect": "-3 levels"}
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Tyr's Pledge",
+      "tiers": [
+        {"cost": 4, "effect": "-2⌘ per health"},
+        {"cost": 6, "effect": "-3⌘ per health"},
+        {"cost": 8, "effect": "-4⌘ per health"}
+      ]
+    }
+  ]
+}
