@@ -1,1 +1,4 @@
 stl/*.stl
+stl/final/*.stl
+stl/*_solid.stl
+stl/*_front.stl
